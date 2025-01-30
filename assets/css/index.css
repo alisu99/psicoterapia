@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-15%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #bbbbbb;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+
+
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .grupo1 {
+        background-color: #D4D4CA;
+        padding: 10rem 15rem;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .grupo1 .apresentacao .nome {
+        color: white;
+        font-weight: 400;
+        font-size: xxx-large;
+        width: max-content;
+    }
+
+    .button {
+        font-family: "Noto Serif";
+        font-size: 19px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        line-height: 61px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 21px 0px;
+        overflow: visible;
+        padding: 0px 10px;
+        min-height: 0px;
+        width: 290px;
+        transform-origin: 50% 50%;
+        transform: translate(0px, 0px);
+        display: block;
+        background: rgb(61, 133, 92);
+        margin-top: 2rem;
+    }
+
+    .button:hover {
+        background: rgb(55, 158, 63);
+        transition: 0.30s;
+    }
+
+
+    .grupo1 .frase {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .grupo1 .apresentacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grupo2 {
+        padding: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .grupo2 .d-flex {
+        gap: 5rem;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grupo3 {
+        padding: 2rem 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .grupo3 .quadro {
+        display: flex;
+        gap: .5rem;
+        padding: 5rem 0;
+        justify-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grupo3 .conteudo {
+        width: 600px;
+        padding: .5rem;
+    }
+
+    .grupo4 {
+        padding: 3rem 15rem;
+        background-color: #0B2F3D;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonials-content {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .grupo5 {
+        padding: 3rem 15rem;
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+    }
+
+    .contato-section {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .cabecalho {
+        padding: 10px 15rem;
+        background-color: #FFFFFF;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        justify-content: space-between;
+    }
+
+    .grupo1 .frase p {
+        max-width: 600px;
+        font-family: "Noto Serif";
+        font-size: 56px;
+        font-weight: 100;
+        color: rgb(21, 25, 51);
+        text-align: left;
+    }
+
+    .navigation-mobile {
+        display: none;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+
+    .grupo6 {
+        display: flex;
+        padding: 10rem;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Noto Serif";
+        gap: 2rem;
+        background-color: #F2E5DC;
+    }
+
+    .grupo6 .bloco1 {
+        display: flex;
+        max-width: 1100px;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .grupo6 .bloco1 .texto h1 {
+        font-size: 60px;
+        font-weight: 400;
+    }
+
+    .grupo6 .bloco2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 1100px;
+    }
+
+    .grupo7 {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        padding: 10rem;
+        font-family: "Noto Serif";
+        background-color: #B3ADA1;
+    }
+
+    .grupo7 .bloco1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .grupo7 .bloco1 h1 {
+        font-size: 60px;
+        font-weight: 400;
+    }
+
+    .grupo8 {
+        display: flex;
+        flex-direction: column;
+        font-family: "Noto Serif";
+        background-color: #ECF0EE;
+        padding: 10rem;
+    }
+
+
+    
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 769px) {
+
+    .grupo1 .frase img {
+        max-width: 280px;
+    }
+
+    .burger-button {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin: 1rem;
+        z-index: 2;
+    }
+
+    .burger-line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        /* Cor das linhas do botão */
+        margin: 2px 0;
+        /* Espaçamento entre as linhas */
+        transition: all 0.3s;
+        /* Animação suave */
+    }
+
+    .burger-button.open .burger-line:nth-child(2) {
+        opacity: 0;
+        /* Oculta a linha do meio quando ativo */
+    }
+
+    .burger-button.open .burger-line:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+        /* Rotaciona a linha superior */
+    }
+
+    .burger-button.open .burger-line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+        /* Rotaciona a linha inferior */
+    }
+
+
+    #navMenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0B2F3D;
+        z-index: 1;
+        animation: slideInUp 0.5s forwards;
+    }
+
+    #navMenu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem .5rem;
+        left: 0;
+        gap: 1rem;
+        border-bottom: 1px solid;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupo1 {
+        background-color: #0B2F3D;
+        /* height: 100vh; */
+        padding: 1rem;
+    }
+
+    .grupo1 .apresentacao .nome {
+        color: white;
+        font-weight: 400;
+        font-size: xx-large;
+        width: max-content;
+    }
+
+    .grupo1 .apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupo2 {
+        background-image: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.5)), url(/assets/img/backgrounds/fundo-1.jpg);
+        background-size: cover;
+        height: max-content;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grupo2 .d-flex {
+        gap: 2rem;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .grupo3 {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .grupo3 .quadro {
+        display: flex;
+        gap: .5rem;
+        padding: 2rem 0;
+        flex-direction: column;
+    }
+
+    .grupo3 .conteudo {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .grupo4 {
+        padding: 1rem;
+        background-color: #0B2F3D;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonials-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .grupo5 {
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+    }
+
+    .grupo1 .frase p {
+        background: gainsboro;
+        padding: 1rem;
+        max-width: 900px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: large;
+        text-align: center;
+        display: flex;
+        height: max-content;
+    }
+
+
+    .contato-section {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .contato {
+        font-size: x-large;
+    }
+
+    .cabecalho {
+        padding: 1rem;
+        background-color: #FFFFFF;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navlinks {
+        flex-direction: column;
+    }
+
+    .justify-content-center {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:1450px) {
+    .grupo1 .frase {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+@media screen and (max-width: 1190px) {
+    .grupo2 .d-flex {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+.entre-em-contato {
+    max-width: 500px;
+}
+
+.motivacional {
+    max-width: 500px;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 3;
+}
+
+.entre-em-contato h1 {
+    color: darkslategray;
+    font-weight: 400;
+}
+
+.frase h4,
+.frase h6 {
+    color: darkslategray;
+    font-weight: 400;
+}
+
+.apresentacao .consultora {
+    width: max-content;
+    color: #FFA200;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.contato {
+    padding: 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    color: gainsboro;
+    text-decoration: none;
+    width: max-content;
+}
+
+.contato:hover {
+    background-color: rgba(220, 220, 220, 0.336);
+    transition: 0.30s;
+}
+
+.contato:not(:hover) {
+    transition: 0.30s;
+}
+
+
+
+.grupo2 .cartao {
+    height: 20rem;
+    width: 20rem;
+    background-color: #0B2F3D;
+    color: gainsboro;
+    padding: 1rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.grupo2 .quem-sou-eu h1 {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: "Noto Serif", serif;
+}
+
+.grupo2 .quem-sou-eu h2 {
+    font-weight: 400;
+    font-size: xx-large;
+    font-family: "Noto Serif", serif;
+}
+
+.grupo2 .quem-sou-eu {
+    max-width: 750px;
+}
+
+.grupo2 .quem-sou-eu p {
+    font-family: "Noto Serif", serif;
+    text-align: justify;
+}
+
+
+.grupo3 .servicos h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: xxx-large;
+    color: darkslategray;
+}
+
+.grupo3 h3 {
+    font-weight: 400;
+    font-size: x-large;
+    color: darkslategray;
+}
+
+.grupo3 p {
+    font-size: large;
+}
+
+.grupo3-button {
+    font-size: 20px;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+}
+
+footer {
+    background-color: #0B2F3D;
+    color: white;
+}
+
+
+.titulo-testimonials {
+    font-size: xxx-large;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+.testimonial {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 100;
+    color: gainsboro;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 400;
+    color: #FFA200;
+}
