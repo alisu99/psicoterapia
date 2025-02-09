@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
+    
 }
 
 @keyframes slideInLeft {
@@ -34,6 +33,9 @@ body {
     animation: slideInLeft 1s forwards;
 }
 
+.grupo1, .grupo2, .grupo3, .grupo4, .grupo5, .grupo6, .grupo7, .grupo8 {
+    font-family: "Noto Serif", serif;
+}
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -55,7 +57,42 @@ body {
     background-color: #888;
 }
 
+.button {
+    font-family: "Noto Serif";
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 61px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 21px 0px;
+    overflow: visible;
+    padding: 0px 10px;
+    min-height: 0px;
+    width: 290px;
+    transform-origin: 50% 50%;
+    transform: translate(0px, 0px);
+    display: block;
+    background: rgb(61, 133, 92);
+    margin-top: 2rem;
+}
 
+.grupo6 {
+    background-color: #F2E5DC;
+}
+
+.grupo7 {
+    background-color: #B3ADA1;
+}
+
+.grupo1 .frase p {
+    max-width: 600px;
+    font-family: "Noto Serif";
+    font-size: 56px;
+    font-weight: 100;
+    color: rgb(21, 25, 51);
+    text-align: left;
+}
 
 
 /* Desktop */
@@ -79,25 +116,7 @@ body {
         width: max-content;
     }
 
-    .button {
-        font-family: "Noto Serif";
-        font-size: 19px;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        line-height: 61px;
-        text-align: center;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 21px 0px;
-        overflow: visible;
-        padding: 0px 10px;
-        min-height: 0px;
-        width: 290px;
-        transform-origin: 50% 50%;
-        transform: translate(0px, 0px);
-        display: block;
-        background: rgb(61, 133, 92);
-        margin-top: 2rem;
-    }
+
 
     .button:hover {
         background: rgb(55, 158, 63);
@@ -134,6 +153,12 @@ body {
         align-items: center;
     }
 
+    .grupo2 .quem-sou-eu p {
+        
+        text-align: justify;
+    }
+    
+
     .grupo3 {
         padding: 2rem 8rem;
         display: flex;
@@ -157,7 +182,7 @@ body {
 
     .grupo4 {
         padding: 3rem 15rem;
-        background-color: #0B2F3D;
+        background-color: #D4D4CA;
         color: white;
         text-align: center;
     }
@@ -183,21 +208,12 @@ body {
 
     .cabecalho {
         padding: 10px 15rem;
-        background-color: #FFFFFF;
-        color: white;
+        background-color: #D4D4CA;
         display: flex;
         align-items: center;
         gap: 3rem;
-        justify-content: space-between;
-    }
-
-    .grupo1 .frase p {
-        max-width: 600px;
+        justify-content: center;
         font-family: "Noto Serif";
-        font-size: 56px;
-        font-weight: 100;
-        color: rgb(21, 25, 51);
-        text-align: left;
     }
 
     .navigation-mobile {
@@ -216,7 +232,6 @@ body {
         align-items: center;
         font-family: "Noto Serif";
         gap: 2rem;
-        background-color: #F2E5DC;
     }
 
     .grupo6 .bloco1 {
@@ -238,13 +253,16 @@ body {
         max-width: 1100px;
     }
 
+    .grupo6 .bloco1 img {
+        max-width: 500px;
+    }
+
     .grupo7 {
         display: flex;
         gap: 5rem;
         justify-content: center;
         padding: 10rem;
         font-family: "Noto Serif";
-        background-color: #B3ADA1;
     }
 
     .grupo7 .bloco1 {
@@ -266,8 +284,20 @@ body {
         padding: 10rem;
     }
 
+    .grupo1 img {
+        max-width: 500px;
+    }
 
-    
+    .grupo2 img {
+        max-width: 350px;
+    }
+
+    .grupo2 .quem-sou-eu h1 {
+        font-size: 60px;
+        font-weight: 400;
+        
+    }
+
 }
 
 
@@ -287,6 +317,12 @@ body {
         cursor: pointer;
         margin: 1rem;
         z-index: 2;
+    }
+
+    .grupo2 .quem-sou-eu h1 {
+        /* font-size: 60px; */
+        font-weight: 400;
+        
     }
 
     .burger-line {
@@ -322,7 +358,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #0B2F3D;
+        background-color: #D4D4CA;
         z-index: 1;
         animation: slideInUp 0.5s forwards;
     }
@@ -351,9 +387,7 @@ body {
     }
 
     .grupo1 {
-        background-color: #0B2F3D;
-        /* height: 100vh; */
-        padding: 1rem;
+        background-color: #D4D4CA;
     }
 
     .grupo1 .apresentacao .nome {
@@ -370,10 +404,8 @@ body {
     }
 
     .grupo2 {
-        background-image: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.5)), url(/assets/img/backgrounds/fundo-1.jpg);
         background-size: cover;
         height: max-content;
-        padding: 1rem;
         display: flex;
         flex-direction: column;
     }
@@ -384,6 +416,35 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .grupo2 .quem-sou-eu p {
+        
+        font-size: 20px;
+    }
+    
+    .grupo1, .grupo2, .grupo3, .grupo4, .grupo5, .grupo6, .grupo7, .grupo8 {
+        padding: 1rem;
+    }
+
+    .grupo6 {
+        padding-top: 2rem;
+    }
+
+    .grupo6 .bloco1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .grupo6 .bloco2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .grupo8 {
+        padding-top: 2rem;
     }
 
     .grupo3 {
@@ -407,7 +468,7 @@ body {
 
     .grupo4 {
         padding: 1rem;
-        background-color: #0B2F3D;
+        background-color: #D4D4CA;
         color: white;
         text-align: center;
     }
@@ -428,17 +489,26 @@ body {
     }
 
     .grupo1 .frase p {
-        background: gainsboro;
         padding: 1rem;
-        max-width: 900px;
-        border-radius: 10px;
-        font-weight: 500;
-        font-size: large;
-        text-align: center;
+        font-weight: 200;
         display: flex;
-        height: max-content;
+        font-family: "Noto Serif";
+        font-size: 40px;
+        color: rgb(21, 25, 51);
+        flex-direction: column;
     }
 
+    .grupo6 .bloco1 img {
+        width: 100%;
+    }
+
+    .grupo7 img {
+        width: 100%;
+    }
+
+    .grupo1 img {
+        width: 100%;
+    }
 
     .contato-section {
         display: flex;
@@ -452,11 +522,11 @@ body {
 
     .cabecalho {
         padding: 1rem;
-        background-color: #FFFFFF;
-        color: white;
+        background-color: #D4D4CA;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-family: "Noto Serif";
     }
 
     .navlinks {
@@ -465,6 +535,10 @@ body {
 
     .justify-content-center {
         flex-direction: column;
+    }
+
+    .grupo2 img {
+        width: 100%;
     }
 
 }
@@ -546,7 +620,7 @@ body {
 .grupo2 .cartao {
     height: 20rem;
     width: 20rem;
-    background-color: #0B2F3D;
+    background-color: #D4D4CA;
     color: gainsboro;
     padding: 1rem;
     font-weight: 400;
@@ -559,25 +633,16 @@ body {
     justify-content: center;
 }
 
-.grupo2 .quem-sou-eu h1 {
-    font-size: 60px;
-    font-weight: 400;
-    font-family: "Noto Serif", serif;
-}
+
 
 .grupo2 .quem-sou-eu h2 {
     font-weight: 400;
     font-size: xx-large;
-    font-family: "Noto Serif", serif;
+    
 }
 
 .grupo2 .quem-sou-eu {
     max-width: 750px;
-}
-
-.grupo2 .quem-sou-eu p {
-    font-family: "Noto Serif", serif;
-    text-align: justify;
 }
 
 
@@ -605,8 +670,8 @@ body {
 }
 
 footer {
-    background-color: #0B2F3D;
-    color: white;
+    background-color: #D4D4CA;
+    font-family: "Noto Serif";
 }
 
 
